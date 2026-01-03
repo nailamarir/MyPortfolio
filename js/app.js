@@ -5,7 +5,7 @@ let knowledgeBase = null;
 async function loadKnowledgeBase() {
     try {
         console.log('Attempting to load knowledge base...');
-        const response = await fetch('knowledge-base.json');
+        const response = await fetch('data/knowledge-base.json');
         console.log('Response status:', response.status);
         
         if (!response.ok) {
@@ -17,7 +17,6 @@ async function loadKnowledgeBase() {
         populatePage();
     } catch (error) {
         console.error('Error loading knowledge base:', error);
-        alert('Error loading data. Please check browser console (F12) for details.');
         // Fallback content if JSON fails to load
         displayFallbackContent();
     }
@@ -30,21 +29,52 @@ function populatePage() {
     // Hero Section
     document.getElementById('hero-name').textContent = knowledgeBase.personal.name;
     document.getElementById('hero-title').textContent = knowledgeBase.personal.title;
-    document.getElementById('hero-tagline').textContent = knowledgeBase.personal.tagline;
-    
+    document.getElementById('hero-bio').textContent = knowledgeBase.personal.short_bio;
+
+    // Citation Metrics (add after social links)
+    const socialLinksContainer = document.getElementById('social-links');
+    if (knowledgeBase.citation_metrics) {
+        const metricsDiv = document.createElement('div');
+        metricsDiv.className = 'citation-metrics';
+        metricsDiv.innerHTML = `
+            <div class="metric">
+                <span class="metric-value">${knowledgeBase.citation_metrics.h_index}</span>
+                <span class="metric-label">h-index</span>
+            </div>
+            <div class="metric">
+                <span class="metric-value">${knowledgeBase.citation_metrics.total_citations}</span>
+                <span class="metric-label">Citations</span>
+            </div>
+            <div class="metric">
+                <span class="metric-value">${knowledgeBase.citation_metrics.i10_index}</span>
+                <span class="metric-label">i10-index</span>
+            </div>
+        `;
+        socialLinksContainer.parentNode.insertBefore(metricsDiv, socialLinksContainer);
+    }
+
+    // CV Download Button
+    if (knowledgeBase.cv_link) {
+        const cvButton = document.createElement('a');
+        cvButton.href = knowledgeBase.cv_link;
+        cvButton.className = 'cv-download-btn';
+        cvButton.target = '_blank';
+        cvButton.innerHTML = '📄 Download CV';
+        socialLinksContainer.parentNode.insertBefore(cvButton, socialLinksContainer.nextSibling);
+    }
+
     // Footer
     document.getElementById('footer-name').textContent = knowledgeBase.personal.name;
 
-    // Social Links
-    const socialLinksContainer = document.getElementById('social-links');
+    // Social Links (already declared above)
     socialLinksContainer.innerHTML = '';
     
     const socialIcons = {
+        'effat': '🏛️',
         'google_scholar': '🎓',
         'linkedin': '💼',
         'researchgate': '📊',
-        'orcid': '🔬',
-        'scopus': '📚'
+        'orcid': '🔬'
     };
 
     for (const [key, url] of Object.entries(knowledgeBase.social_links)) {
@@ -73,24 +103,63 @@ function populatePage() {
         statsContainer.appendChild(statCard);
     }
 
-    // Skills
+    // Skills with progress bars
     const skillsContainer = document.getElementById('skills-container');
     skillsContainer.innerHTML = '';
-    
-    // Combine all skills
-    const allSkills = [
-        ...knowledgeBase.skills.programming_languages,
-        ...knowledgeBase.skills.deep_learning_frameworks,
-        ...knowledgeBase.skills.big_data_technologies.slice(0, 3),
-        ...knowledgeBase.skills.other_skills.slice(0, 4)
+
+    // Skills with proficiency levels
+    const skillsWithLevels = [
+        { name: 'Python', level: 95 },
+        { name: 'Deep Learning', level: 90 },
+        { name: 'PyTorch', level: 88 },
+        { name: 'TensorFlow', level: 85 },
+        { name: 'Apache Spark', level: 85 },
+        { name: 'Machine Learning', level: 92 },
+        { name: 'Cybersecurity', level: 88 },
+        { name: 'NLP', level: 82 },
+        { name: 'Federated Learning', level: 80 },
+        { name: 'Big Data Analytics', level: 85 }
     ];
 
-    allSkills.forEach(skill => {
-        const badge = document.createElement('span');
-        badge.className = 'skill-badge';
-        badge.textContent = skill;
-        skillsContainer.appendChild(badge);
+    skillsWithLevels.forEach(skill => {
+        const skillItem = document.createElement('div');
+        skillItem.className = 'skill-item';
+        skillItem.innerHTML = `
+            <div class="skill-info">
+                <span class="skill-name">${skill.name}</span>
+                <span class="skill-percentage">${skill.level}%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" data-level="${skill.level}"></div>
+            </div>
+        `;
+        skillsContainer.appendChild(skillItem);
     });
+
+    // Initialize skill bar animations
+    initSkillBarAnimations();
+
+    // Education Timeline
+    const educationTimeline = document.getElementById('education-timeline');
+    if (educationTimeline) {
+        educationTimeline.innerHTML = '';
+        knowledgeBase.education.forEach((edu, index) => {
+            const eduItem = document.createElement('div');
+            eduItem.className = 'education-item';
+            eduItem.innerHTML = `
+                <div class="edu-marker"></div>
+                <div class="edu-content">
+                    <div class="edu-year">${edu.years}</div>
+                    <h3 class="edu-degree">${edu.degree}</h3>
+                    <p class="edu-institution">${edu.institution}</p>
+                    <p class="edu-college">${edu.college}</p>
+                    ${edu.thesis ? `<p class="edu-thesis"><strong>Thesis:</strong> ${edu.thesis}</p>` : ''}
+                    ${edu.specialization ? `<p class="edu-spec"><strong>Specialization:</strong> ${edu.specialization}</p>` : ''}
+                </div>
+            `;
+            educationTimeline.appendChild(eduItem);
+        });
+    }
 
     // Research Areas
     const researchGrid = document.getElementById('research-grid');
@@ -112,21 +181,119 @@ function populatePage() {
     // Publications
     const publicationsList = document.getElementById('publications-list');
     publicationsList.innerHTML = '';
-    
+
     knowledgeBase.selected_publications.forEach(pub => {
         const item = document.createElement('div');
         item.className = 'publication-item';
-        
-        let venue = pub.venue;
-        if (pub.year) venue += `, ${pub.year}`;
-        if (pub.pages) venue += `, ${pub.pages}`;
-        if (pub.award) venue += ` (${pub.award})`;
-        
+
+        const typeClass = pub.type === 'Journal' ? 'pub-journal' : 'pub-conference';
+        const awardBadge = pub.award ? `<span class="pub-award">${pub.award}</span>` : '';
+
         item.innerHTML = `
-            <h4>${pub.title}</h4>
-            <p>${pub.authors}. ${venue}.</p>
+            <div class="pub-header">
+                <span class="pub-type ${typeClass}">${pub.type}</span>
+                <span class="pub-year">${pub.year}</span>
+            </div>
+            <h4 class="pub-title">${pub.title}</h4>
+            <p class="pub-authors">${pub.authors}</p>
+            <p class="pub-venue">${pub.venue}</p>
+            <div class="pub-footer">
+                ${awardBadge}
+                ${pub.link ? `<a href="${pub.link}" target="_blank" class="pub-link">View Publication →</a>` : ''}
+            </div>
         `;
         publicationsList.appendChild(item);
+    });
+
+    // Projects
+    const projectsGrid = document.getElementById('projects-grid');
+    projectsGrid.innerHTML = '';
+
+    knowledgeBase.projects.forEach(project => {
+        const projectCard = document.createElement('div');
+        projectCard.className = 'project-card';
+
+        const techTags = project.technologies.map(tech =>
+            `<span class="project-tech">${tech}</span>`
+        ).join('');
+
+        projectCard.innerHTML = `
+            <div class="project-icon">${project.icon}</div>
+            <h3 class="project-title">${project.title}</h3>
+            <p class="project-description">${project.description}</p>
+            <div class="project-technologies">${techTags}</div>
+        `;
+        projectsGrid.appendChild(projectCard);
+    });
+
+    // Awards & Honors
+    const awardsTimeline = document.getElementById('awards-timeline');
+    if (awardsTimeline) {
+        awardsTimeline.innerHTML = '';
+        knowledgeBase.awards.forEach(award => {
+            const awardItem = document.createElement('div');
+            awardItem.className = 'award-item';
+            const isHighlight = award.title.includes('Best Paper') || award.title.includes('Scholarship');
+            awardItem.innerHTML = `
+                <div class="award-year">${award.year}</div>
+                <div class="award-content ${isHighlight ? 'highlight' : ''}">
+                    <h4 class="award-title">${award.title}</h4>
+                    <p class="award-org">${award.organization}</p>
+                </div>
+            `;
+            awardsTimeline.appendChild(awardItem);
+        });
+    }
+
+    // Student Supervision
+    const supervisionGrid = document.getElementById('supervision-grid');
+    if (supervisionGrid && knowledgeBase.student_supervision) {
+        supervisionGrid.innerHTML = '';
+        knowledgeBase.student_supervision.forEach(student => {
+            const studentCard = document.createElement('div');
+            studentCard.className = 'supervision-card';
+            const statusClass = student.status === 'In Progress' ? 'status-progress' : 'status-completed';
+            studentCard.innerHTML = `
+                <div class="supervision-header">
+                    <span class="supervision-degree">${student.degree}</span>
+                    <span class="supervision-status ${statusClass}">${student.status}</span>
+                </div>
+                <h4 class="supervision-name">${student.name}</h4>
+                <p class="supervision-thesis">${student.thesis}</p>
+                <p class="supervision-year">${student.year}</p>
+            `;
+            supervisionGrid.appendChild(studentCard);
+        });
+    }
+
+    // Courses Taught
+    const coursesGrid = document.getElementById('courses-grid');
+    coursesGrid.innerHTML = '';
+
+    const courseIcons = {
+        'Machine Learning': '🤖',
+        'Data Preprocessing (Data-centric AI)': '📊',
+        'Cyber Security': '🔒',
+        'Business Intelligence (BI)': '📈',
+        'Statistics and Data Analysis': '📉',
+        'Information Security': '🛡️',
+        'Algorithmic and Data Structures': '🔢',
+        'Operating Systems': '💻',
+        'Introduction to Computing': '🖥️',
+        'Text Mining and Natural Language Processing': '💬',
+        'Senior Project I-II': '🎓',
+        'Principles of Computers (Python)': '🐍'
+    };
+
+    knowledgeBase.courses_taught.forEach(course => {
+        const courseCard = document.createElement('div');
+        courseCard.className = 'course-card';
+        const icon = courseIcons[course] || '📚';
+        courseCard.innerHTML = `
+            <span class="course-icon">${icon}</span>
+            <span class="course-name">${course}</span>
+        `;
+        coursesGrid.appendChild(courseCard);
     });
 
     // Contact Information
@@ -152,8 +319,8 @@ function displayFallbackContent() {
     console.log('Using fallback content...');
     
     document.getElementById('hero-name').textContent = 'Dr. Naila Marir';
-    document.getElementById('hero-title').textContent = 'AI & Cybersecurity Researcher';
-    document.getElementById('hero-tagline').textContent = 'Assistant Professor | Data-Centric AI | Federated Learning | Big Data Analytics';
+    document.getElementById('hero-title').textContent = 'Assistant Professor';
+    document.getElementById('hero-bio').textContent = 'Advancing the frontiers of AI and Cybersecurity through cutting-edge research in Data-Centric AI, Federated Learning, and Deep Learning. Committed to developing ethical, privacy-preserving AI solutions that address real-world security challenges.';
     
     // Add fallback summary
     const summary = document.getElementById('about-summary');
@@ -168,10 +335,34 @@ function displayFallbackContent() {
         <div class="stat-card"><h3>10+</h3><p>Courses Taught</p></div>
     `;
     
-    // Add fallback skills
+    // Add fallback skills with progress bars
     const skillsContainer = document.getElementById('skills-container');
-    const skills = ['Python', 'Deep Learning', 'PyTorch', 'TensorFlow', 'Apache Spark', 'Hadoop', 'Network Security', 'Federated Learning', 'NLP', 'Business Intelligence'];
-    skillsContainer.innerHTML = skills.map(skill => `<span class="skill-badge">${skill}</span>`).join('');
+    const fallbackSkills = [
+        { name: 'Python', level: 95 },
+        { name: 'Deep Learning', level: 90 },
+        { name: 'PyTorch', level: 88 },
+        { name: 'TensorFlow', level: 85 },
+        { name: 'Apache Spark', level: 85 },
+        { name: 'Machine Learning', level: 92 },
+        { name: 'Cybersecurity', level: 88 },
+        { name: 'NLP', level: 82 },
+        { name: 'Federated Learning', level: 80 },
+        { name: 'Big Data Analytics', level: 85 }
+    ];
+    skillsContainer.innerHTML = fallbackSkills.map(skill => `
+        <div class="skill-item">
+            <div class="skill-info">
+                <span class="skill-name">${skill.name}</span>
+                <span class="skill-percentage">${skill.level}%</span>
+            </div>
+            <div class="skill-bar">
+                <div class="skill-progress" data-level="${skill.level}"></div>
+            </div>
+        </div>
+    `).join('');
+
+    // Initialize skill bar animations for fallback
+    initSkillBarAnimations();
     
     // Add fallback research areas
     const researchGrid = document.getElementById('research-grid');
@@ -387,6 +578,35 @@ function getBotResponse(message) {
 
     // Default response
     return responses.default;
+}
+
+// Skill bar animation with Intersection Observer
+function initSkillBarAnimations() {
+    const skillItems = document.querySelectorAll('.skill-item');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const progressBar = entry.target.querySelector('.skill-progress');
+                const level = progressBar.getAttribute('data-level');
+
+                // Add small delay for staggered effect
+                setTimeout(() => {
+                    progressBar.style.width = level + '%';
+                }, 200);
+
+                // Stop observing once animated
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.3,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    skillItems.forEach(item => {
+        observer.observe(item);
+    });
 }
 
 // Initialize on page load

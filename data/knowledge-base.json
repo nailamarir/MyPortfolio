@@ -5,7 +5,8 @@
     "department": "Computer Science Department",
     "institution": "Effat University",
     "location": "Jeddah, Saudi Arabia",
-    "tagline": "AI & Cybersecurity Researcher | Data-Centric AI | Federated Learning | Big Data Analytics"
+    "tagline": "AI & Cybersecurity Researcher | Data-Centric AI | Federated Learning | Big Data Analytics",
+    "short_bio": "Advancing the frontiers of AI and Cybersecurity through cutting-edge research in Data-Centric AI, Federated Learning, and Deep Learning. Committed to developing ethical, privacy-preserving AI solutions that address real-world security challenges."
   },
   "contact": {
     "email": "namarir@effatuniversity.edu.sa",
@@ -14,11 +15,11 @@
     "address": "Qasr Khuzam St. Kilo. 2 Old Mecca Road. P.O.BOX 34689 - Jeddah 21478 Saudi Arabia"
   },
   "social_links": {
-    "google_scholar": "https://scholar.google.com/citations?user=vgxz ZRYAAAAJ&hl=en&oi=ao",
+    "effat": "https://www.effatuniversity.edu.sa/English/Personal/namarir/Pages/Default.aspx",
+    "google_scholar": "https://scholar.google.com/citations?user=vgxzZRYAAAAJ&hl=en",
     "linkedin": "https://www.linkedin.com/in/naila-marir-7250139b/",
     "researchgate": "https://www.researchgate.net/profile/Naila-Marir",
-    "orcid": "https://orcid.org/0000-0001-6633-9099",
-    "scopus": "https://www.scopus.com/authid/detailuri?authorId=57195914891"
+    "orcid": "https://orcid.org/0000-0001-6633-9099"
   },
   "summary": "Dr. Naila Marir serves as an Assistant Professor in the Computer Science Department at Effat University. She earned her PhD in Computer Science and Technology and specializes in artificial intelligence and cybersecurity. Her research is centered on Data-Centric AI, Federated Learning, and Big Data Analytics, with a strong emphasis on enhancing cybersecurity through Generative AI and Deep Learning. Dr. Marir's work advances Deep Learning techniques and their applications in Network Security, addressing critical challenges in data security and integrity. Additionally, she is dedicated to exploring Natural Language Processing and Sentiment Analysis to deepen understanding of human language for impactful real-world applications. Dr. Marir is committed to developing ethical AI solutions that prioritize privacy and security.",
   "education": [
@@ -78,6 +79,37 @@
     "students_supervised": "20+",
     "courses_taught": "10+"
   },
+  "citation_metrics": {
+    "h_index": 4,
+    "total_citations": 263,
+    "i10_index": 2,
+    "source": "Google Scholar",
+    "last_updated": "January 2026"
+  },
+  "cv_link": "docs/CV_Dr_Naila_Marir.pdf",
+  "student_supervision": [
+    {
+      "name": "Sample PhD Student 1",
+      "degree": "Ph.D.",
+      "thesis": "Deep Learning for Network Intrusion Detection",
+      "status": "In Progress",
+      "year": "2024-Present"
+    },
+    {
+      "name": "Sample Master Student 1",
+      "degree": "M.Sc.",
+      "thesis": "Federated Learning for Healthcare Data Privacy",
+      "status": "Completed",
+      "year": "2023"
+    },
+    {
+      "name": "Sample Master Student 2",
+      "degree": "M.Sc.",
+      "thesis": "Sentiment Analysis of Arabic Social Media",
+      "status": "Completed",
+      "year": "2022"
+    }
+  ],
   "research_areas": [
     {
       "title": "Artificial Intelligence",
@@ -128,6 +160,44 @@
     "business_intelligence": ["PowerBI", "RapidMiner", "Talend"],
     "other_skills": ["Network Security", "Federated Learning", "NLP", "Cloud Computing"]
   },
+  "projects": [
+    {
+      "title": "Privacy-Preserving Federated Learning Framework",
+      "description": "Developing a secure federated learning framework that enables collaborative AI model training across institutions without sharing sensitive data.",
+      "technologies": ["Federated Learning", "Privacy", "PyTorch", "Distributed Systems"],
+      "icon": "🔐"
+    },
+    {
+      "title": "Real-Time Network Threat Detection Platform",
+      "description": "Building an AI-powered platform for real-time detection of network anomalies and cyber threats using deep learning on streaming data.",
+      "technologies": ["Apache Spark", "Deep Learning", "Cybersecurity", "Real-Time Analytics"],
+      "icon": "🛡️"
+    },
+    {
+      "title": "Intelligent E-Learning Analytics Dashboard",
+      "description": "Creating an analytics dashboard that tracks learner engagement and predicts student performance using AI-driven insights.",
+      "technologies": ["Machine Learning", "NLP", "PowerBI", "Education Tech"],
+      "icon": "📊"
+    },
+    {
+      "title": "Arabic NLP Toolkit",
+      "description": "Developing tools and datasets for Arabic natural language processing including sentiment analysis and named entity recognition.",
+      "technologies": ["NLP", "Arabic Text Processing", "Deep Learning", "Dataset Development"],
+      "icon": "🌍"
+    },
+    {
+      "title": "IoT Security Monitoring System",
+      "description": "Designing an intrusion detection system specifically for IoT environments to protect smart devices from cyber attacks.",
+      "technologies": ["IoT", "Machine Learning", "Network Security", "Anomaly Detection"],
+      "icon": "📡"
+    },
+    {
+      "title": "AI-Assisted Medical Image Analysis",
+      "description": "Building deep learning models for automated analysis of medical imaging data to assist healthcare professionals in diagnosis.",
+      "technologies": ["Deep Learning", "Computer Vision", "TensorFlow", "Healthcare AI"],
+      "icon": "🏥"
+    }
+  ],
   "courses_taught": [
     "Machine Learning",
     "Data Preprocessing (Data-centric AI)",
@@ -144,41 +214,61 @@
   ],
   "selected_publications": [
     {
-      "title": "Distributed Abnormal Behavior Detection System Based on Deep Learning Techniques: A Spark Based Approach and a Comparative Evaluation",
-      "authors": "Marir Naila, Wang Huiqiang, et al.",
-      "venue": "IEEE Transactions on Network and Service Management",
-      "status": "Accepted with revision",
-      "year": 2024
+      "title": "Risk Detection of Breast Cancer from MRI Images Using Deep Feature Extraction and Fine-Tuning NCA Feature Selection",
+      "authors": "O. Ozaltin, A. Subasi, T. Brahimi, N. Marir, A. Sarirete",
+      "venue": "Journal of Statistical Computation and Simulation",
+      "year": 2025,
+      "type": "Journal",
+      "link": "https://doi.org/10.1080/00949655.2025.2582075"
     },
     {
-      "title": "Distributed Abnormal Behavior Detection Approach based on Deep Belief Network and Ensemble SVM using Spark",
-      "authors": "Marir Naila, Wang Huiqiang, et al.",
+      "title": "Personalized Learning Through MBTI Prediction: A Deep Learning Approach Integrated with Learner Profile Ontology",
+      "authors": "S. Bousalem, F. Benchikha, N. Marir",
       "venue": "IEEE Access",
-      "year": 2018,
-      "pages": "6: 59657-59671",
-      "impact_factor": "3.745"
+      "year": 2025,
+      "type": "Journal",
+      "link": "https://ieeexplore.ieee.org/document/10890987"
     },
     {
-      "title": "Unsupervised Feature Learning with Distributed Stacked Denoising Sparse Autoencoder for Abnormal Behavior Detection using Apache Spark",
-      "authors": "Marir Naila, Wang Huiqiang, et al.",
-      "venue": "IEEE International Conference on Knowledge Innovation and Invention 2019",
-      "location": "Seoul, Korea",
-      "year": 2019,
-      "award": "Best Paper Award"
+      "title": "Machine Learning-Driven Distributed Intrusion Detection System for the Internet of Vehicles",
+      "authors": "J. AlFarra, L. Alam, N. Marir, A. Sarirete",
+      "venue": "13th International Conference on Research in Computing (ICRC)",
+      "year": 2025,
+      "type": "Conference",
+      "link": "https://ceur-ws.org/Vol-3935/Paper4.pdf"
+    },
+    {
+      "title": "Centroid-Based Aspect Sentiment Analysis for MOOC Learner Reviews",
+      "authors": "N. Marir, A. Sarirete, T. Brahimi",
+      "venue": "22nd International Learning and Technology Conference (L&T)",
+      "year": 2025,
+      "type": "Conference",
+      "link": "https://ieeexplore.ieee.org/document/10940787"
     },
     {
       "title": "SocialNER2.0: A Comprehensive Dataset for Enhancing Named Entity Recognition in Short Human-Produced Text",
-      "authors": "Belbekri Adel, Bechikha Fouzia, Slimani Yahya, Marir Naila",
+      "authors": "A. Belbekri, F. Benchikha, Y. Slimani, N. Marir",
       "venue": "Intelligent Data Analysis",
       "year": 2024,
-      "impact_factor": "1.7"
+      "type": "Journal",
+      "link": "https://www.researchgate.net/publication/377936184"
     },
     {
-      "title": "Enhancing Film Discovery through Social Media Traces Using Sentiment Analysis and Machine Learning Combined Approach",
-      "authors": "Aicha Boubekeur, Fouzia Benchikha, Naila Marir",
-      "venue": "L&T 2024",
-      "location": "Jeddah, KSA",
-      "year": 2024
+      "title": "Unsupervised Feature Learning with Distributed Stacked Denoising Sparse Autoencoder for Abnormal Behavior Detection using Apache Spark",
+      "authors": "N. Marir, H. Wang, G. Feng",
+      "venue": "IEEE International Conference on Knowledge Innovation and Invention (ICKII)",
+      "year": 2019,
+      "type": "Conference",
+      "award": "Best Paper Award",
+      "link": "https://ieeexplore.ieee.org/document/9042645"
+    },
+    {
+      "title": "Distributed Abnormal Behavior Detection Approach based on Deep Belief Network and Ensemble SVM using Spark",
+      "authors": "N. Marir, H. Wang, G. Feng, B. Li, M. Jia",
+      "venue": "IEEE Access",
+      "year": 2018,
+      "type": "Journal",
+      "link": "https://ieeexplore.ieee.org/document/8486946"
     }
   ],
   "awards": [
