@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Local scripts (not needed for deployment)
+start.sh
+deploy.sh

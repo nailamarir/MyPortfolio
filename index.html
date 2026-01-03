@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Naila Marir - AI & Cybersecurity Researcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Decoration -->
+    <div class="bg-decoration"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo" id="nav-logo">NM</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 id="hero-name">Loading...</h1>
+            <p class="subtitle" id="hero-title"></p>
+            <p class="tagline" id="hero-tagline"></p>
+            <div class="social-links" id="social-links"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p id="about-summary"></p>
+                </div>
+                <div class="about-stats" id="stats-container"></div>
+            </div>
+            <div class="skills-container" id="skills-container"></div>
+        </div>
+    </section>
+
+    <!-- Research Areas -->
+    <section id="research" style="background: var(--light-bg);">
+        <div class="container">
+            <h2>Research Areas</h2>
+            <div class="research-grid" id="research-grid"></div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+        <div class="container">
+            <h2>Selected Publications</h2>
+            <div class="publications-list" id="publications-list"></div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="background: var(--light-bg);">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">Feel free to reach out for collaborations, research opportunities, or any inquiries.</p>
+                <div class="contact-info" id="contact-info"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: var(--primary-color); color: var(--white); padding: 2rem 0; text-align: center;">
+        <div class="container">
+            <p>&copy; 2025 <span id="footer-name">Dr. Naila Marir</span>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div class="chatbot-container">
+        <button class="chatbot-button" onclick="toggleChatbot()">💬</button>
+        <div class="chatbot-window" id="chatbot">
+            <div class="chatbot-header">
+                <h3>Ask me about Dr. Marir</h3>
+                <button class="close-chat" onclick="toggleChatbot()">×</button>
+            </div>
+            <div class="chatbot-messages" id="chatMessages">
+                <div class="message bot">
+                    Hello! I'm here to answer questions about Dr. Naila Marir's research, publications, and expertise. What would you like to know?
+                </div>
+            </div>
+            <div class="chatbot-input-area">
+                <input type="text" id="userInput" placeholder="Ask a question..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

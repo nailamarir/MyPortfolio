@@ -1,0 +1,248 @@
+{
+  "personal": {
+    "name": "Dr. Naila Marir",
+    "title": "Assistant Professor",
+    "department": "Computer Science Department",
+    "institution": "Effat University",
+    "location": "Jeddah, Saudi Arabia",
+    "tagline": "AI & Cybersecurity Researcher | Data-Centric AI | Federated Learning | Big Data Analytics"
+  },
+  "contact": {
+    "email": "namarir@effatuniversity.edu.sa",
+    "phone": "+966 50 7337478",
+    "office_phone": "+966 122137855",
+    "address": "Qasr Khuzam St. Kilo. 2 Old Mecca Road. P.O.BOX 34689 - Jeddah 21478 Saudi Arabia"
+  },
+  "social_links": {
+    "google_scholar": "https://scholar.google.com/citations?user=vgxz ZRYAAAAJ&hl=en&oi=ao",
+    "linkedin": "https://www.linkedin.com/in/naila-marir-7250139b/",
+    "researchgate": "https://www.researchgate.net/profile/Naila-Marir",
+    "orcid": "https://orcid.org/0000-0001-6633-9099",
+    "scopus": "https://www.scopus.com/authid/detailuri?authorId=57195914891"
+  },
+  "summary": "Dr. Naila Marir serves as an Assistant Professor in the Computer Science Department at Effat University. She earned her PhD in Computer Science and Technology and specializes in artificial intelligence and cybersecurity. Her research is centered on Data-Centric AI, Federated Learning, and Big Data Analytics, with a strong emphasis on enhancing cybersecurity through Generative AI and Deep Learning. Dr. Marir's work advances Deep Learning techniques and their applications in Network Security, addressing critical challenges in data security and integrity. Additionally, she is dedicated to exploring Natural Language Processing and Sentiment Analysis to deepen understanding of human language for impactful real-world applications. Dr. Marir is committed to developing ethical AI solutions that prioritize privacy and security.",
+  "education": [
+    {
+      "degree": "Ph.D. in Computer Science",
+      "institution": "Harbin Engineering University, China",
+      "years": "2015-2019",
+      "college": "College of Computer Science and Technology",
+      "thesis": "Research on Abnormal Behavior Detection Techniques Based on Big Data Analytics"
+    },
+    {
+      "degree": "Chinese Language",
+      "institution": "Harbin Engineering University, China",
+      "years": "2014-2015",
+      "college": "College of International Cooperative Education"
+    },
+    {
+      "degree": "Master's in Computer Science",
+      "institution": "University of Skikda, Algeria",
+      "years": "2012-2014",
+      "college": "College of Science",
+      "specialization": "Engineering of Distributed Systems",
+      "thesis": "Intrusion Detection System using Paxos Consensus based on Multi-agent Systems"
+    },
+    {
+      "degree": "Bachelor's in Mathematics and Computer Science",
+      "institution": "University of Skikda, Algeria",
+      "years": "2009-2012",
+      "college": "College of Science",
+      "specialization": "Computer Networks and Distributed Systems",
+      "project": "Design and development of a network simulation tool"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Assistant Professor",
+      "institution": "Effat University",
+      "department": "Computer Science Department, Effat College of Engineering",
+      "period": "August 2024 - Present"
+    },
+    {
+      "position": "Associate Professor",
+      "institution": "Abdelhamid Mehri - Constantine 2 University",
+      "department": "Faculty of New Technologies of Information and Communication",
+      "period": "November 2023 - 2024"
+    },
+    {
+      "position": "Assistant Professor",
+      "institution": "Abdelhamid Mehri - Constantine 2 University",
+      "department": "Faculty of New Technologies of Information and Communication",
+      "period": "November 2021 - 2022"
+    }
+  ],
+  "statistics": {
+    "years_experience": "10+",
+    "publications": "15+",
+    "students_supervised": "20+",
+    "courses_taught": "10+"
+  },
+  "research_areas": [
+    {
+      "title": "Artificial Intelligence",
+      "icon": "🤖",
+      "topics": [
+        "Data-Centric AI",
+        "Federated Learning",
+        "Generative AI",
+        "Deep Learning Techniques"
+      ]
+    },
+    {
+      "title": "Cybersecurity",
+      "icon": "🔒",
+      "topics": [
+        "Network Security",
+        "Intrusion Detection Systems",
+        "Malware Detection",
+        "IoT Security"
+      ]
+    },
+    {
+      "title": "Big Data Analytics",
+      "icon": "📊",
+      "topics": [
+        "Distributed Computing",
+        "Apache Spark",
+        "Abnormal Behavior Detection",
+        "Data Processing at Scale"
+      ]
+    },
+    {
+      "title": "Natural Language Processing",
+      "icon": "💬",
+      "topics": [
+        "Sentiment Analysis",
+        "Text Mining",
+        "MOOC Analytics",
+        "Social Media Analysis"
+      ]
+    }
+  ],
+  "skills": {
+    "programming_languages": ["Python", "Java", "JavaScript", "C++"],
+    "deep_learning_frameworks": ["PyTorch", "TensorFlow", "Keras", "DL4J"],
+    "big_data_technologies": ["Apache Spark", "Hadoop", "MapReduce"],
+    "databases": ["Oracle", "MySQL", "MongoDB"],
+    "business_intelligence": ["PowerBI", "RapidMiner", "Talend"],
+    "other_skills": ["Network Security", "Federated Learning", "NLP", "Cloud Computing"]
+  },
+  "courses_taught": [
+    "Machine Learning",
+    "Data Preprocessing (Data-centric AI)",
+    "Cyber Security",
+    "Business Intelligence (BI)",
+    "Statistics and Data Analysis",
+    "Information Security",
+    "Algorithmic and Data Structures",
+    "Operating Systems",
+    "Introduction to Computing",
+    "Text Mining and Natural Language Processing",
+    "Senior Project I-II",
+    "Principles of Computers (Python)"
+  ],
+  "selected_publications": [
+    {
+      "title": "Distributed Abnormal Behavior Detection System Based on Deep Learning Techniques: A Spark Based Approach and a Comparative Evaluation",
+      "authors": "Marir Naila, Wang Huiqiang, et al.",
+      "venue": "IEEE Transactions on Network and Service Management",
+      "status": "Accepted with revision",
+      "year": 2024
+    },
+    {
+      "title": "Distributed Abnormal Behavior Detection Approach based on Deep Belief Network and Ensemble SVM using Spark",
+      "authors": "Marir Naila, Wang Huiqiang, et al.",
+      "venue": "IEEE Access",
+      "year": 2018,
+      "pages": "6: 59657-59671",
+      "impact_factor": "3.745"
+    },
+    {
+      "title": "Unsupervised Feature Learning with Distributed Stacked Denoising Sparse Autoencoder for Abnormal Behavior Detection using Apache Spark",
+      "authors": "Marir Naila, Wang Huiqiang, et al.",
+      "venue": "IEEE International Conference on Knowledge Innovation and Invention 2019",
+      "location": "Seoul, Korea",
+      "year": 2019,
+      "award": "Best Paper Award"
+    },
+    {
+      "title": "SocialNER2.0: A Comprehensive Dataset for Enhancing Named Entity Recognition in Short Human-Produced Text",
+      "authors": "Belbekri Adel, Bechikha Fouzia, Slimani Yahya, Marir Naila",
+      "venue": "Intelligent Data Analysis",
+      "year": 2024,
+      "impact_factor": "1.7"
+    },
+    {
+      "title": "Enhancing Film Discovery through Social Media Traces Using Sentiment Analysis and Machine Learning Combined Approach",
+      "authors": "Aicha Boubekeur, Fouzia Benchikha, Naila Marir",
+      "venue": "L&T 2024",
+      "location": "Jeddah, KSA",
+      "year": 2024
+    }
+  ],
+  "awards": [
+    {
+      "year": 2023,
+      "title": "Machine Learning Trainer Certificate",
+      "organization": "University of Constantine 2"
+    },
+    {
+      "year": 2023,
+      "title": "Enterprise Security with Elastic XDR Training Certificate",
+      "organization": "University of Constantine 2 - Abdelhamid Mehri"
+    },
+    {
+      "year": 2022,
+      "title": "Ethical Hacking Trainer Certificate",
+      "organization": "University of Constantine 2 – Abdelhamid Mehri"
+    },
+    {
+      "year": 2019,
+      "title": "IEEE ICKII 2019 Best Paper Award",
+      "organization": "International Conference on Knowledge Innovation and Invention"
+    },
+    {
+      "year": 2015,
+      "title": "Second Grade Award",
+      "organization": "College of International Cooperative Education, Harbin, China"
+    },
+    {
+      "year": 2014,
+      "title": "Scholarship for Ph.D. degree in Computer Science",
+      "organization": "Ministry of Higher Education and Research, Algeria"
+    },
+    {
+      "year": 2014,
+      "title": "Scholarship for Ph.D. in Computer Science",
+      "organization": "Chinese Government Scholarship Council (CSC), China"
+    },
+    {
+      "year": 2014,
+      "title": "Top Student Award",
+      "organization": "University of Skikda, Algeria"
+    },
+    {
+      "year": 2012,
+      "title": "Top Student Award",
+      "organization": "University of Skikda, Algeria"
+    }
+  ],
+  "chatbot_responses": {
+    "greetings": "Hello! I'm here to help you learn about Dr. Naila Marir. You can ask me about her research, publications, education, skills, or contact information.",
+    "research": "Dr. Marir's research focuses on Data-Centric AI, Federated Learning, Big Data Analytics, and Cybersecurity. She specializes in using Deep Learning and Generative AI to enhance network security and detect anomalies.",
+    "education": "Dr. Marir holds a PhD in Computer Science and Technology from Harbin Engineering University (2015-2019), a Master's in Computer Science from University of Skikda, Algeria (2012-2014), and a Bachelor's in Mathematics and Computer Science from the same university (2009-2012).",
+    "position": "Dr. Marir is currently an Assistant Professor in the Computer Science Department at Effat University, Jeddah, Saudi Arabia, since August 2024.",
+    "publications": "Dr. Marir has published over 15 research papers in prestigious journals and conferences, including IEEE Access and IEEE Transactions. Notable work includes research on distributed abnormal behavior detection using Deep Learning techniques and Apache Spark.",
+    "skills": "Dr. Marir is proficient in Python, Java, Deep Learning frameworks (PyTorch, TensorFlow, Keras), Big Data technologies (Apache Spark, Hadoop), cybersecurity tools, and Business Intelligence platforms like PowerBI.",
+    "awards": "Dr. Marir received the IEEE ICKII 2019 Best Paper Award, scholarships from both the Chinese Government and Algerian Ministry, and multiple Top Student Awards.",
+    "contact": "You can reach Dr. Marir at namarir@effatuniversity.edu.sa or call +966 50 7337478. She's based at Effat University in Jeddah, Saudi Arabia.",
+    "teaching": "Dr. Marir teaches courses including Machine Learning, Data Preprocessing, Cybersecurity, Business Intelligence, Natural Language Processing, Operating Systems, and more.",
+    "ai": "Dr. Marir specializes in Data-Centric AI, Federated Learning, Generative AI, and Deep Learning. Her work focuses on developing ethical AI solutions that prioritize privacy and security.",
+    "cybersecurity": "Her cybersecurity research includes Network Security, Intrusion Detection Systems, IoT Security, and Malware Generation and Detection using AI techniques.",
+    "nlp": "Dr. Marir works on Natural Language Processing and Sentiment Analysis, particularly in analyzing MOOC learner reviews and social media content for various applications.",
+    "spark": "Dr. Marir has extensive experience with Apache Spark and Big Data Analytics. Her notable publication 'Distributed Abnormal Behavior Detection Approach based on Deep Belief Network and Ensemble SVM using Spark' was published in IEEE Access (2018).",
+    "federated_learning": "Dr. Marir's research includes Federated Learning as a key area. She works on privacy-preserving deep learning techniques and distributed AI systems that maintain data security and integrity.",
+    "default": "I can help you learn about Dr. Marir's research areas, education, publications, skills, teaching experience, or contact information. What specific topic interests you?"
+  }
+}
