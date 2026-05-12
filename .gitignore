@@ -8,3 +8,10 @@
 # Local scripts (not needed for deployment)
 start.sh
 deploy.sh
+
+# Environment variables
+.env
+.env.local
+
+# Local Netlify folder
+.netlify

@@ -21,18 +21,18 @@
     "researchgate": "https://www.researchgate.net/profile/Naila-Marir",
     "orcid": "https://orcid.org/0000-0001-6633-9099"
   },
-  "summary": "Dr. Naila Marir serves as an Assistant Professor in the Computer Science Department at Effat University. She earned her PhD in Computer Science and Technology and specializes in artificial intelligence and cybersecurity. Her research is centered on Data-Centric AI, Federated Learning, and Big Data Analytics, with a strong emphasis on enhancing cybersecurity through Generative AI and Deep Learning. Dr. Marir's work advances Deep Learning techniques and their applications in Network Security, addressing critical challenges in data security and integrity. Additionally, she is dedicated to exploring Natural Language Processing and Sentiment Analysis to deepen understanding of human language for impactful real-world applications. Dr. Marir is committed to developing ethical AI solutions that prioritize privacy and security.",
+  "summary": "Dr. Naila Marir serves as an Assistant Professor in the Computer Science Department at Effat University. She earned her PhD in Computer Science and Technology from Harbin Engineering University, Harbin, China, and specializes in artificial intelligence and cybersecurity. Her research is centered on Data-Centric AI, Federated Learning, and Big Data Analytics, with a strong emphasis on enhancing cybersecurity through Generative AI and Deep Learning. Dr. Marir's work advances Deep Learning techniques and their applications in Network Security, addressing critical challenges in data security and integrity. Additionally, she is dedicated to exploring Natural Language Processing and Sentiment Analysis to deepen understanding of human language for impactful real-world applications. Dr. Marir is committed to developing ethical AI solutions that prioritize privacy and security.",
   "education": [
     {
       "degree": "Ph.D. in Computer Science",
-      "institution": "Harbin Engineering University, China",
+      "institution": "Harbin Engineering University, Harbin, China",
       "years": "2015-2019",
       "college": "College of Computer Science and Technology",
       "thesis": "Research on Abnormal Behavior Detection Techniques Based on Big Data Analytics"
     },
     {
       "degree": "Chinese Language",
-      "institution": "Harbin Engineering University, China",
+      "institution": "Harbin Engineering University, Harbin, China",
       "years": "2014-2015",
       "college": "College of International Cooperative Education"
     },
@@ -75,18 +75,24 @@
   ],
   "statistics": {
     "years_experience": "10+",
-    "publications": "15+",
+    "publications": "20+",
     "students_supervised": "20+",
     "courses_taught": "10+"
   },
   "citation_metrics": {
-    "h_index": 4,
-    "total_citations": 263,
-    "i10_index": 2,
+    "all": {
+      "citations": 283,
+      "h_index": 4,
+      "i10_index": 3
+    },
+    "since_2021": {
+      "citations": 231,
+      "h_index": 4,
+      "i10_index": 3
+    },
     "source": "Google Scholar",
-    "last_updated": "January 2026"
+    "last_updated": "May 2026"
   },
-  "cv_link": "docs/CV_Dr_Naila_Marir.pdf",
   "student_supervision": [
     {
       "name": "Sample PhD Student 1",
@@ -162,44 +168,160 @@
   },
   "projects": [
     {
-      "title": "Privacy-Preserving Federated Learning Framework",
-      "description": "Developing a secure federated learning framework that enables collaborative AI model training across institutions without sharing sensitive data.",
-      "technologies": ["Federated Learning", "Privacy", "PyTorch", "Distributed Systems"],
-      "icon": "🔐"
+      "title": "BRAC",
+      "subtitle": "Byzantine-Resilient Agentic Consensus",
+      "description": "Byzantine-Resilient Agentic Consensus framework for NHL lymphoma diagnosis. Combines multimodal deep learning with fault-tolerant multi-agent coordination to deliver robust, clinically trustworthy oncology AI.",
+      "domain": "Oncology · Agentic AI",
+      "period": "2025–2026",
+      "status": "Accepted",
+      "venue": "21st International Conference on Hybrid Artificial Intelligence Systems — HAIS 2026, Marbella, Spain",
+      "technologies": [
+        "Multimodal Deep Learning",
+        "NHL Diagnosis",
+        "Agentic AI",
+        "Byzantine Resilience"
+      ],
+      "icon": "🧬",
+      "link": "https://haisconference.eu"
     },
     {
-      "title": "Real-Time Network Threat Detection Platform",
-      "description": "Building an AI-powered platform for real-time detection of network anomalies and cyber threats using deep learning on streaming data.",
-      "technologies": ["Apache Spark", "Deep Learning", "Cybersecurity", "Real-Time Analytics"],
+      "title": "OncoFusionNet",
+      "subtitle": "Semantic-Driven Multimodal Learning Framework for Non-Hodgkin's Lymphoma Diagnosis Stratification",
+      "description": "Introduces an ontology-driven semantic quality assurance layer (SQAL) combined with multimodal fusion of pathology and radiology reports — delivering interpretable, trustworthy subtype classification for clinical decision support.",
+      "domain": "Medical AI · Oncology NLP",
+      "period": "2025",
+      "status": "Published",
+      "venue": "Presented at the 14th International Conference on Model and Data Engineering — MEDI 2025, ElSewedy University of Technology, Cairo, Egypt, November 2–4, 2025. Published in Springer LNCS, indexed in Scopus & DBLP.",
+      "collaborators": "Passent Elkafrawy",
+      "technologies": [
+        "Multimodal Fusion",
+        "NHL Diagnosis",
+        "Ontology NLP",
+        "BioClinicalBERT",
+        "Springer LNCS"
+      ],
+      "icon": "🧬",
+      "link": "https://link.springer.com/conference/med"
+    },
+    {
+      "title": "A3L",
+      "subtitle": "Adaptive Adversarial Active Learning",
+      "description": "A multi-agent framework that integrates active adversarial sample selection with budget-constrained incremental retraining to enable label-efficient adversarial defense for cyber threat intelligence classification. A3L formalizes CTI robustness as a Markov Decision Process and introduces Adversarial Sample Utility — a novel acquisition function combining entropy and margin — to select only the most decision-boundary-proximal samples. The result: 92.5% robust accuracy using just 326 labeled samples, a 4.2× reduction over conventional adversarial training.",
+      "domain": "Cybersecurity · Agentic AI",
+      "period": "2025–2026",
+      "status": "Under Review",
+      "technologies": [
+        "Active Learning",
+        "Adversarial Defense",
+        "CTI",
+        "Multi-Agent AI",
+        "MDP",
+        "SecBERT",
+        "DistilBERT",
+        "AnnoCTR"
+      ],
       "icon": "🛡️"
     },
     {
-      "title": "Intelligent E-Learning Analytics Dashboard",
-      "description": "Creating an analytics dashboard that tracks learner engagement and predicts student performance using AI-driven insights.",
-      "technologies": ["Machine Learning", "NLP", "PowerBI", "Education Tech"],
-      "icon": "📊"
+      "title": "AGRI-BIRD",
+      "description": "AI-powered gantry robot for automated plant health monitoring using computer vision. Designed to detect crop diseases and assess plant health at scale, AGRI-BIRD brings precision agriculture into the era of intelligent automation — replacing manual inspection with continuous, accurate, robot-driven surveillance.",
+      "domain": "Robotics · Plant Health",
+      "period": "2026",
+      "status": "Active",
+      "awards": [
+        { "medal": "🥇", "title": "1st Place — GCC Robotics Competition (Gulf Region)" },
+        { "medal": "🥇", "title": "Gold Medal — Geneva International Exhibition of Inventions 2026" },
+        { "medal": "🥉", "title": "3rd Place — National Competition, Saudi Arabia" }
+      ],
+      "collaborators": "Dr. Narjisse Kabbaj · Liza Yousef · Alaa Aldybous · Jazzal Kandiel · Mawa Hijji",
+      "technologies": [
+        "Robotics",
+        "Computer Vision",
+        "Plant Health",
+        "Gantry Robot",
+        "Geneva Exhibition 2026",
+        "GCC Competition",
+        "Precision Agriculture",
+        "Edge AI",
+        "NVIDIA Jetson"
+      ],
+      "icon": "🌱"
     },
     {
-      "title": "Arabic NLP Toolkit",
-      "description": "Developing tools and datasets for Arabic natural language processing including sentiment analysis and named entity recognition.",
-      "technologies": ["NLP", "Arabic Text Processing", "Deep Learning", "Dataset Development"],
-      "icon": "🌍"
+      "title": "HydroMind",
+      "description": "Autonomous hydroponic farming system powered by a 13-agent, 4-layer cognitive architecture running on Raspberry Pi and NVIDIA Jetson Orin NX. HydroMind combines reactive PID control, deliberative BDI planning, adaptive LSTM-based learning, and an LLM orchestrator (Llama 3) into a fully self-governing farm — from nutrient management and climate control to harvest planning and fault recovery. Features a Byzantine-resilient PBFT consensus protocol for strategic decisions and an on-device knowledge distillation pipeline that compresses cloud-trained models down to 85 KB for edge deployment. Aligned with Saudi Vision 2030 goals in food security and water conservation.",
+      "domain": "AgriTech · Agentic AI · IoT",
+      "period": "2026",
+      "status": "Active",
+      "supervisors": "Dr. Naila Marir (AI & System Design) · Dr. Enfel Barkat (Communications & ECE)",
+      "students": "Nawar Alimam (AI Lead) · Amro Yousef (Communications Lead) · Tariq Tadmori (Hardware Lead) · Layan Turkistani (Full-Stack Developer)",
+      "technologies": [
+        "Multi-Agent AI",
+        "Agentic AI",
+        "Hydroponics",
+        "IoT",
+        "NVIDIA Jetson",
+        "Knowledge Distillation",
+        "BDI Agents",
+        "LLM",
+        "Edge AI",
+        "ECE Capstone",
+        "Vision 2030"
+      ],
+      "icon": "🌿"
     },
     {
-      "title": "IoT Security Monitoring System",
-      "description": "Designing an intrusion detection system specifically for IoT environments to protect smart devices from cyber attacks.",
-      "technologies": ["IoT", "Machine Learning", "Network Security", "Anomaly Detection"],
-      "icon": "📡"
+      "title": "Vision Beyond Sight",
+      "description": "Cloud-based mobile application that gives visually impaired users the ability to understand their surroundings through AI-powered scene description and speech synthesis. The user captures an image on their phone — the system sends it to a Vision AI model (GPT-4o Vision / Gemini), generates a natural language scene description, refines it with NLP, converts it to speech, and plays the audio back in under 3 seconds. Supports bilingual operation in Arabic and English, fully compliant with WCAG 2.1 AA accessibility standards. Evaluated with visually impaired participants using the SUS questionnaire.",
+      "domain": "Assistive AI · Mobile App",
+      "period": "2026",
+      "status": "Active",
+      "supervisors": "Dr. Naila Marir · Dr. Passent Elkafrawy",
+      "students": "Sana Rahmani · Rama Alkusair",
+      "technologies": [
+        "Assistive AI",
+        "Computer Vision",
+        "Image Captioning",
+        "Text-to-Speech",
+        "GPT-4o Vision",
+        "Arabic NLP",
+        "Mobile App",
+        "Accessibility",
+        "WCAG",
+        "Cloud API",
+        "CS Capstone"
+      ],
+      "icon": "👁️"
     },
     {
-      "title": "AI-Assisted Medical Image Analysis",
-      "description": "Building deep learning models for automated analysis of medical imaging data to assist healthcare professionals in diagnosis.",
-      "technologies": ["Deep Learning", "Computer Vision", "TensorFlow", "Healthcare AI"],
-      "icon": "🏥"
+      "title": "AEGIS",
+      "description": "LLM-powered penetration testing framework for multimodal AI security. AEGIS sits at the intersection of three research frontiers: adversarial machine learning, digital-twin-based red-teaming, and AI-adapted penetration testing. It uses large language models to autonomously generate adversarial attacks — evasion, poisoning, prompt injection, jailbreaking — against multimodal AI systems in a safe sandboxed environment, then evaluates model robustness and produces structured security reports. A senior capstone project that directly extends the A3L adversarial intelligence research line.",
+      "domain": "AI Security · Red-Teaming",
+      "period": "2026",
+      "status": "Active",
+      "supervisors": "Dr. Naila Marir",
+      "students": "Dana Alrijal · Jouri Aldaghma",
+      "technologies": [
+        "Adversarial ML",
+        "LLM Red-Teaming",
+        "Multimodal AI Security",
+        "Penetration Testing",
+        "Digital Twin",
+        "Jailbreak",
+        "Prompt Injection",
+        "AI Safety",
+        "CS Capstone"
+      ],
+      "icon": "🔐"
     }
   ],
   "courses_taught": [
     "Machine Learning",
+    "Big Data Analytics",
+    "Artificial Intelligence",
+    "Natural Language Processing (NLP)",
+    "Introduction to AI",
+    "Principles of Computing",
     "Data Preprocessing (Data-centric AI)",
     "Cyber Security",
     "Business Intelligence (BI)",
@@ -207,19 +329,40 @@
     "Information Security",
     "Algorithmic and Data Structures",
     "Operating Systems",
-    "Introduction to Computing",
-    "Text Mining and Natural Language Processing",
-    "Senior Project I-II",
-    "Principles of Computers (Python)"
+    "Senior Project I-II"
   ],
   "selected_publications": [
     {
       "title": "Risk Detection of Breast Cancer from MRI Images Using Deep Feature Extraction and Fine-Tuning NCA Feature Selection",
       "authors": "O. Ozaltin, A. Subasi, T. Brahimi, N. Marir, A. Sarirete",
-      "venue": "Journal of Statistical Computation and Simulation",
-      "year": 2025,
+      "venue": "Journal of Statistical Computation and Simulation, 96(5), 1153-1175",
+      "year": 2026,
       "type": "Journal",
-      "link": "https://doi.org/10.1080/00949655.2025.2582075"
+      "link": "https://www.tandfonline.com/doi/abs/10.1080/00949655.2025.2582075"
+    },
+    {
+      "title": "Network Analytics Techniques: Next-Generation Abnormal Behavior Detection System Based on Big Data Analytics and Deep Learning Techniques",
+      "authors": "N. Marir, H. Wang",
+      "venue": "Mathematical Modeling for Big Data Analytics (Chapter 12), 205-218",
+      "year": 2026,
+      "type": "Book Chapter",
+      "link": "https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780443267352000237"
+    },
+    {
+      "title": "Ontology-Driven Dynamic Learner Profiling: Towards Fluid Learning",
+      "authors": "S. Bousalem, M. Chelghoum, N. Marir, F. Benchikha",
+      "venue": "2025 International Conference on Research in Computing at Feminine (RIF), 1-5",
+      "year": 2025,
+      "type": "Conference",
+      "link": "https://ieeexplore.ieee.org/abstract/document/11406813"
+    },
+    {
+      "title": "Towards an Explainable Framework for Personalized Treatment Recommendations",
+      "authors": "M.O. Labraoui, Z. Benzadri, N. Marir",
+      "venue": "2025 IEEE/ACS 22nd International Conference on Computer Systems and Applications (AICCSA)",
+      "year": 2025,
+      "type": "Conference",
+      "link": "https://ieeexplore.ieee.org/abstract/document/11315487"
     },
     {
       "title": "Personalized Learning Through MBTI Prediction: A Deep Learning Approach Integrated with Learner Profile Ontology",
@@ -272,6 +415,31 @@
     }
   ],
   "awards": [
+    {
+      "year": "2025–2026",
+      "title": "Queen Effat Prize for Excellence in Teaching",
+      "organization": "Effat College of Engineering, Effat University — under the patronage of HRH Princess Lolowah Al Faisal",
+      "medal": "🏆",
+      "image": "images/awards/queen-effat-prize-2026.jpeg"
+    },
+    {
+      "year": 2026,
+      "title": "Gold Medal — Geneva International Exhibition of Inventions",
+      "organization": "Geneva, Switzerland (AGRI-BIRD)",
+      "medal": "🥇"
+    },
+    {
+      "year": 2026,
+      "title": "1st Place — GCC Robotics Competition",
+      "organization": "Gulf Region (AGRI-BIRD)",
+      "medal": "🥇"
+    },
+    {
+      "year": 2026,
+      "title": "3rd Place — National Robotics Competition",
+      "organization": "Saudi Arabia (AGRI-BIRD)",
+      "medal": "🥉"
+    },
     {
       "year": 2023,
       "title": "Machine Learning Trainer Certificate",
