@@ -81,9 +81,9 @@ AWARDS & HONORS:
 COURSES TAUGHT:
 Machine Learning, Data Preprocessing (Data-centric AI), Cyber Security, Business Intelligence (BI), Statistics and Data Analysis, Information Security, Algorithmic and Data Structures, Operating Systems, Introduction to Computing, Text Mining and Natural Language Processing, Senior Project I-II, Principles of Computers (Python)
 
-CITATION METRICS (Google Scholar, May 2026):
-- Total Citations: 283 (231 since 2021)
-- h-index: 4
+CITATION METRICS (Google Scholar, November 2026):
+- Total Citations: 296 (249 since 2021)
+- h-index: 5 (4 since 2021)
 - i10-index: 3
 
 STATISTICS:
